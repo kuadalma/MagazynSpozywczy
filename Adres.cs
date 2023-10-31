@@ -26,19 +26,19 @@
             Console.Clear();
             Console.WriteLine($"Podaj nową ulicę: ");
             tmp = Console.ReadLine();
-            if (tmp.Length == null) Ulica = tmp;
+            if (tmp != "") Ulica = tmp;
             Console.WriteLine("Podaj nowy numer posesji: ");
             tmp = Console.ReadLine();
-            if (tmp.Length == null) NumerPosesji = tmp;
+            if (tmp != "") NumerPosesji = tmp;
             Console.WriteLine("Podaj nowy kod pocztowy: ");
             tmp = Console.ReadLine();
-            if (tmp.Length == null) KodPocztowy = tmp;
+            if (tmp != "") KodPocztowy = tmp;
             Console.WriteLine("Podaj nową miejscowość: ");
             tmp = Console.ReadLine();
-            if (tmp.Length == null) Miejscowosc = tmp;
+            if (tmp != "") Miejscowosc = tmp;
             Console.WriteLine("Podaj nowy numer lokalu: ");
             tmp = Console.ReadLine();
-            if (tmp.Length == null) NumerLokalu = tmp;
+            if (tmp != "") NumerLokalu = tmp;
             Console.Clear();
             Console.WriteLine("Zmieniono adres na: ");
             Console.WriteLine(ToString()); // Wyświetla zaktualizowane informacje o produkcie

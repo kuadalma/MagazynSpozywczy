@@ -34,22 +34,25 @@
         {
             string tmp;
             Console.Clear();
+            Console.WriteLine(ToString());
             Console.WriteLine($"Podaj nową nazwę: ");
             tmp = Console.ReadLine();
-            if (tmp.Length != null) Nazwa = tmp;
+            if (tmp != "") Nazwa = tmp;
             Console.WriteLine("Podaj nowego producenta: ");
             tmp = Console.ReadLine();
-            if (tmp.Length != null) Producent = tmp;
+            if (tmp != "") Producent = tmp;
             Console.WriteLine("Podaj nową kategorię: ");
             tmp = Console.ReadLine();
-            if (tmp.Length != null) Kategoria = tmp;
+            if (tmp != "") Kategoria = tmp;
             Console.WriteLine("Podaj nowy kod kreskowy: ");
-            if (Console.ReadLine() != null) GenerateCode();
             tmp = Console.ReadLine();
-            if (tmp.Length != null) Cena = tmp;
+            if (tmp != "") KodKreskowy = tmp;
+            Console.WriteLine("Podaj nową cene: ");
+            tmp = Console.ReadLine();
+            if (tmp != "") Cena = tmp;
             Console.WriteLine("Podaj nowy opis: ");
             tmp = Console.ReadLine();
-            if (tmp.Length != null) Opis = tmp;
+            if (tmp != "") Opis = tmp;
             Console.Clear();
             Console.WriteLine("Zmieniono produkt na: ");
             Console.WriteLine(ToString()); // Wyświetla zaktualizowane informacje o produkcie
